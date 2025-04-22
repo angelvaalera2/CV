@@ -1,0 +1,138 @@
+{
+  "es": {
+    "name": "Jairo López Carbó",
+    "title": "Estudiante Ingeniería Sist. Aeroespaciales & Telemática",
+    "aboutTitle": "Acerca de",
+    "aboutText": "Apasionado por el desarrollo de software y la programación.",
+    "expTitle": "Experiencia",
+    "eduTitle": "Estudios",
+    "honTitle": "Matrículas de Honor",
+    "skillsTitle": "Habilidades",
+    "langTitle": "Idiomas",
+    "personal": [
+      "📍 Viladecans, Barcelona",
+      "✉️ j.lopezcarbo4@gmail.com",
+      "📞 +34 635862864"
+    ],
+    "links": {
+      "github": "https://github.com/JairoLopezCarbo",
+      "githubText": "GitHub",
+      "linkedin": "https://www.linkedin.com/in/jairo-lopez-carbo-40a4a924b/",
+      "linkedinText": "LinkedIn"
+    },
+    "exp": [
+      {
+        "company": "Universidad Politécnica de Catalunya (UPC)",
+        "role": "Becario Proyecto SESAR",
+        "period": "sept. 2023 - Presente",
+        "details": "Contrato a tiempo parcial, trabajo en grupo en un simulador de tráfico aéreo en vías urbanas"
+      },
+      {
+        "company": "TB Kids",
+        "role": "Profesor infantil Robótica",
+        "period": "mar. 2023 - jul. 2023",
+        "details": ""
+      },
+      {
+        "company": "Kids & Us",
+        "role": "Profesor infantil Inglés",
+        "period": "sept. 2022 - jul. 2023",
+        "details": ""
+      },
+      {
+        "company": "FIRST LEGO LEAGUE, Equipo 1675",
+        "role": "Equipo de programación",
+        "period": "2019 - 2020",
+        "details": ""
+      }
+    ],
+    "edu": [
+      {
+        "institution": "Universidad Politécnica de Catalunya, campus de Castelldefels (UPC - EETAC)",
+        "degree": "Doble Grado - Ingeniería Sistemas Aeroespaciales & Ingeniería Telemática",
+        "period": "sept. 2022 - Presente"
+      },
+      {
+        "institution": "SA-FA - Gavà",
+        "degree": "Bachillerato Tecnológico",
+        "period": "2020 - 2022"
+      },
+      {
+        "institution": "Programa de intercambio, Milwaukee (Estados Unidos)",
+        "degree": "",
+        "period": "2019 - 2020"
+      }
+    ],
+    "skills": ["Python", "C#", "C", "MySQL", "SolidWorks"],
+    "languages": ["Castellano - Nativo", "Inglés - C1 (Certificado)", "Catalán - Nativo"],
+    "honors": ["Expresión Gráfica", "Informática 2", "Procesamiento de Señal", "Infraestructura de Redes"]
+  },
+  "en": {
+    "name": "Jairo López Carbó",
+    "title": "Aerospace Systems & Telematics Engineering Student",
+    "aboutTitle": "About",
+    "aboutText": "Passionate about software development and programming.",
+    "expTitle": "Experience",
+    "eduTitle": "Education",
+    "honTitle": "Honors",
+    "skillsTitle": "Skills",
+    "langTitle": "Languages",
+    "personal": [
+      "📍 Viladecans, Barcelona",
+      "✉️ j.lopezcarbo4@gmail.com",
+      "📞 +34 635862864"
+    ],
+    "links": {
+      "github": "https://github.com/JairoLopezCarbo",
+      "githubText": "GitHub",
+      "linkedin": "https://www.linkedin.com/in/jairo-lopez-carbo-40a4a924b/",
+      "linkedinText": "LinkedIn"
+    },
+    "exp": [
+      {
+        "company": "Universitat Politècnica de Catalunya (UPC)",
+        "role": "SESAR Project Intern",
+        "period": "Sept 2023 - Present",
+        "details": "Part-time contract, teamwork on an urban air traffic simulator."
+      },
+      {
+        "company": "TB Kids",
+        "role": "Children's Robotics Instructor",
+        "period": "Mar 2023 - Jul 2023",
+        "details": ""
+      },
+      {
+        "company": "Kids & Us",
+        "role": "Children's English Instructor",
+        "period": "Sept 2022 - Jul 2023",
+        "details": ""
+      },
+      {
+        "company": "FIRST LEGO LEAGUE, Team 1675",
+        "role": "Programming Team Member",
+        "period": "2019 - 2020",
+        "details": ""
+      }
+    ],
+    "edu": [
+      {
+        "institution": "Polytechnic University of Catalonia, Castelldefels Campus (UPC - EETAC)",
+        "degree": "Double Degree - Aerospace Systems Engineering & Telematics Engineering",
+        "period": "Sept 2022 - Present"
+      },
+      {
+        "institution": "SA-FA - Gavà",
+        "degree": "Technological Baccalaureate",
+        "period": "2020 - 2022"
+      },
+      {
+        "institution": "Exchange program, Milwaukee (USA)",
+        "degree": "",
+        "period": "2019 - 2020"
+      }
+    ],
+    "skills": ["Python", "C#", "C", "MySQL", "SolidWorks"],
+    "languages": ["Spanish - Native", "English - C1 (Certified)", "Catalan - Native"],
+    "honors": ["Graphic Expression", "Computer Science 2", "Signal Processing", "Network Infrastructure"]
+  }
+}
