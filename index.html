@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,8 +38,9 @@
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
+    /* Ajuste de separación entre botones */
     #print-btn { right: 20px; }
-    #lang-btn { right: 140px; }
+    #lang-btn { right: 180px; }
 
     .two-columns { display: flex; align-items: flex-start; gap: 20px; }
     .sidebar { flex: 0 0 260px; }
@@ -90,16 +91,16 @@
   </style>
 </head>
 <body>
-  <button id="lang-btn">English</button>
-  <button id="print-btn">Descargar PDF</button>
+  <button id="lang-btn">🌐 English</button>
+  <button id="print-btn">📄 Descargar PDF</button>
 
   <div class="container">
     <div class="two-columns">
       <aside class="sidebar">
         <img src="image.png" alt="Foto perfil">
         <div class="about" id="about-box">
-          <div class="section-title" id="about-title">Acerca de</div>
-          <p id="about-text">Apasionado por el desarrollo de software y la programación.</p>
+          <div class="section-title" id="about-title">About</div>
+          <p id="about-text">Passionate about software development and programming.</p>
         </div>
         <ul class="personal-details">
           <li id="loc">📍 Viladecans, Barcelona</li>
@@ -114,26 +115,26 @@
       <main class="main">
         <header>
           <h1 id="name">Jairo López Carbó</h1>
-          <p id="title">Estudiante Ingeniería Sist. Aeroespaciales & Telemática</p>
+          <p id="title">Aerospace Systems & Telematics Engineering Student</p>
         </header>
         <section>
-          <div class="section-title" id="exp-title">Experiencia</div>
+          <div class="section-title" id="exp-title">Experience</div>
           <div id="experience" class="timeline"></div>
         </section>
         <section style="margin-top:40px;">
-          <div class="section-title" id="edu-title">Estudios</div>
+          <div class="section-title" id="edu-title">Education</div>
           <div id="education" class="timeline"></div>
         </section>
         <section style="margin-top:40px; page-break-inside: avoid;">
-          <div class="section-title" id="hon-title">Matrículas de Honor</div>
+          <div class="section-title" id="hon-title">Honors</div>
           <div id="honors" class="honors"></div>
         </section>
         <section style="margin-top:40px; page-break-inside: avoid;">  
-          <div class="section-title" id="skills-title">Habilidades</div>
+          <div class="section-title" id="skills-title">Skills</div>
           <div id="skills" class="skills"></div>
         </section>
         <section style="margin-top:40px; page-break-inside: avoid;">  
-          <div class="section-title" id="lang-title">Idiomas</div>
+          <div class="section-title" id="lang-title">Languages</div>
           <div id="languages" class="languages"></div>
         </section>
       </main>
@@ -202,7 +203,7 @@
     const langBtn = document.getElementById('lang-btn');
     const printBtn = document.getElementById('print-btn');
     const data = JSON.parse(document.getElementById('data-json').textContent);
-    let current = 'es';
+    let current = 'en'; // Mostrar inicialmente en inglés
     function render() {
       const d = data[current];
       document.documentElement.lang = current;
@@ -218,9 +219,12 @@
       document.querySelectorAll('.personal-details li').forEach((li,i) => li.textContent = d.personal[i]);
       document.getElementById('link-git').textContent = '🔗 '+d.social[0];
       document.getElementById('link-in').textContent = '🔗 '+d.social[1];
+      // Actualizar texto del botón PDF según idioma
+      printBtn.textContent = current==='es'? '📄 Descargar PDF' : '📄 Download PDF';
       ['experience','education'].forEach(id => { document.getElementById(id).innerHTML=''; renderTimeline(id,d[id==='experience'? 'exp':'edu'], id==='education'); });
       ['honors','skills','languages'].forEach(id => { document.getElementById(id).innerHTML=''; renderTags(id,d[id]); });
-      langBtn.textContent = current==='es'? 'English':'Español';
+      // Mostrar etiqueta de cambio de idioma
+      langBtn.textContent = current==='es'? '🌐 English' : '🌐 Español';
     }
     function renderTimeline(id, items, ed=false) {
       const c = document.getElementById(id);
