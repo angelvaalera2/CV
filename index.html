@@ -7,10 +7,17 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
   <style>
     @page { size: auto; margin: 15mm; }
-    :root { --primary: #007bff; --text: #333; --light-bg: #f5f5f5; --font-base: 'Roboto', sans-serif; }
+    :root { 
+      --primary: #007bff;
+      --text: #333;
+      --light-bg: #f5f5f5;
+      --font-base: 'Roboto', sans-serif;
+    }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: var(--font-base); color: var(--text); background: #fff; line-height: 1.6; }
     .container { width: 95%; max-width: 1000px; margin: 20px auto; }
+    
+    /* === BOTONES FIJOS === */
     button {
       background: var(--primary);
       color: #fff;
@@ -20,38 +27,81 @@
       padding: 8px 14px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       cursor: pointer;
-      transition: transform 0.1s, box-shadow 0.2s;
+      transition: transform .1s, box-shadow .2s;
       position: fixed;
       top: 20px;
       z-index: 1000;
     }
     button:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
     #print-btn { right: 20px; }
-    #lang-btn { right: 180px; }
+    #lang-btn  { right: 180px; }
+    #switch-btn { right: 340px; }
+
     .two-columns { display: flex; align-items: flex-start; gap: 20px; }
     .sidebar { flex: 0 0 260px; }
-    .main { flex: 1; }
-    .sidebar img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; }
+    .main    { flex: 1; }
+
+    .sidebar img {
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
     .section-title { font-size: 1.5rem; color: var(--primary); margin-bottom: 10px; }
+
     .about { background: var(--light-bg); padding: 15px; border-radius: 6px; margin-bottom: 20px; }
     .personal-details { list-style: none; margin-top: 20px; }
     .personal-details li { margin-bottom: 8px; display: flex; align-items: center; }
+
     .social-links { margin-top: 20px; display: flex; flex-direction: column; gap: 5px; }
     .social-links a { text-decoration: none; font-size: 1rem; color: var(--text); font-weight: 500; }
     .social-links a:hover { color: var(--primary); }
+
     .main header { margin-bottom: 30px; }
     .main header h1 { font-size: 2.5rem; color: var(--primary); }
-    .main header p { font-weight: 500; font-size: 1.1rem; }
+    .main header p  { font-weight: 500; font-size: 1.1rem; }
+
     .timeline { position: relative; margin-left: 20px; }
-    .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: var(--light-bg); }
-    .item { position: relative; margin-bottom: 30px; padding-left: 30px; page-break-inside: avoid; }
-    .item::before { content: ''; position: absolute; left: 2px; top: 5px; width: 12px; height: 12px; background: var(--primary); border-radius: 50%; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--light-bg);
+    }
+    .item {
+      position: relative;
+      margin-bottom: 30px;
+      padding-left: 30px;
+      page-break-inside: avoid;
+    }
+    .item::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: var(--primary);
+      border-radius: 50%;
+    }
     .item h3 { margin-bottom: 4px; font-size: 1.1rem; color: var(--primary); }
-    .item .role { font-weight: 500; margin-bottom: 4px; }
+    .item .role   { font-weight: 500; margin-bottom: 4px; }
     .item .period { font-size: 0.9rem; color: #666; }
-    .item p { margin-top: 6px; }
-    .honors, .skills, .languages { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; margin-bottom: 20px; page-break-inside: avoid; }
-    .tag { background: var(--light-bg); padding: 6px 12px; border-radius: 4px; font-size: 0.9rem; }
+    .item p       { margin-top: 6px; }
+
+    .honors, .skills, .languages {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-top: 10px; margin-bottom: 20px;
+      page-break-inside: avoid;
+    }
+    .tag {
+      background: var(--light-bg); padding: 6px 12px;
+      border-radius: 4px; font-size: 0.9rem;
+    }
+
     @media (max-width: 480px) {
       .two-columns { flex-direction: column; }
       .sidebar, .main { width: 100%; }
@@ -66,7 +116,8 @@
 </head>
 <body>
   <button id="lang-btn">🌐 English</button>
-  <button id="print-btn">📄 Download PDF</button>
+  <button id="print-btn">📄 Descargar PDF</button>
+  <button id="switch-btn">🔄 Alternar estilo</button>
 
   <div class="container">
     <div class="two-columns">
@@ -116,34 +167,41 @@
   </div>
 
   <script>
-    const langBtn = document.getElementById('lang-btn');
-    const printBtn = document.getElementById('print-btn');
+    const langBtn    = document.getElementById('lang-btn');
+    const printBtn   = document.getElementById('print-btn');
+    const switchBtn  = document.getElementById('switch-btn');
     let data, current = 'en';
 
     function render() {
       const d = data[current];
       document.documentElement.lang = current;
-      document.getElementById('name').textContent = d.name;
-      document.getElementById('title').textContent = d.title;
+      document.getElementById('name').textContent        = d.name;
+      document.getElementById('title').textContent       = d.title;
       document.getElementById('about-title').textContent = d.aboutTitle;
-      document.getElementById('about-text').textContent = d.aboutText;
-      document.getElementById('exp-title').textContent = d.expTitle;
-      document.getElementById('edu-title').textContent = d.eduTitle;
-      document.getElementById('hon-title').textContent = d.honTitle;
-      document.getElementById('skills-title').textContent = d.skillsTitle;
-      document.getElementById('lang-title').textContent = d.langTitle;
-      document.querySelectorAll('.personal-details li').forEach((li,i) => li.textContent = d.personal[i]);
+      document.getElementById('about-text').textContent  = d.aboutText;
+      document.getElementById('exp-title').textContent   = d.expTitle;
+      document.getElementById('edu-title').textContent   = d.eduTitle;
+      document.getElementById('hon-title').textContent   = d.honTitle;
+      document.getElementById('skills-title').textContent= d.skillsTitle;
+      document.getElementById('lang-title').textContent  = d.langTitle;
+
+      document.querySelectorAll('.personal-details li')
+              .forEach((li,i)=> li.textContent = d.personal[i]);
+
       const gitLink = document.getElementById('link-git');
       gitLink.href = d.links.github;
       gitLink.textContent = '🔗 ' + d.links.githubText;
       const inLink = document.getElementById('link-in');
       inLink.href = d.links.linkedin;
       inLink.textContent = '🔗 ' + d.links.linkedinText;
-      document.getElementById('print-btn').textContent = '📄 ' + (current==='es' ? 'Descargar PDF' : 'Download PDF');
+
+      langBtn.textContent  = current==='es'? '🌐 English' : '🌐 Español';
+      printBtn.textContent = '📄 ' + (current==='es'? 'Descargar PDF' : 'Download PDF');
+
       ['experience','education'].forEach(id => {
         const container = document.getElementById(id);
         container.innerHTML = '';
-        const items = id === 'experience' ? d.exp : d.edu;
+        const items = id==='experience'? d.exp : d.edu;
         renderTimeline(container, items, id==='education');
       });
       ['honors','skills','languages'].forEach(id => {
@@ -156,16 +214,15 @@
           container.appendChild(span);
         });
       });
-      langBtn.textContent = current==='es' ? '🌐 English' : '🌐 Español';
     }
 
     function renderTimeline(container, items, education=false) {
       items.forEach(x => {
         const div = document.createElement('div'); div.className='item';
-        const title = document.createElement('h3');
-        title.textContent = education ? x.institution : x.company;
-        const role = document.createElement('div'); role.className='role';
-        role.textContent = education ? x.degree : x.role;
+        const title  = document.createElement('h3');
+        title.textContent = education? x.institution : x.company;
+        const role   = document.createElement('div'); role.className='role';
+        role.textContent = education? x.degree      : x.role;
         const period = document.createElement('div'); period.className='period';
         period.textContent = x.period;
         div.append(title, role, period);
@@ -178,12 +235,18 @@
     }
 
     langBtn.addEventListener('click', () => {
-      current = current==='es' ? 'en' : 'es';
+      current = current==='es'? 'en' : 'es';
       render();
     });
     printBtn.addEventListener('click', () => window.print());
 
-    // Carga datos externos
+    switchBtn.addEventListener('click', () => {
+      const file = window.location.pathname.split('/').pop();
+      window.location.href = file === 'index2.html'
+        ? 'index.html'
+        : 'index2.html';
+    });
+
     fetch('data.json')
       .then(res => res.json())
       .then(json => { data = json; render(); })
