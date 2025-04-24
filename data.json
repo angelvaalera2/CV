@@ -1,138 +1,105 @@
 {
   "es": {
-    "name": "Jairo López Carbó",
-    "title": "Estudiante Ingeniería Sist. Aeroespaciales & Telemática",
+    "name": "Ángel Valera García",
+    "title": "Estudiante Ingeniería Aeroespaciales & Telecomunicaciones",
     "aboutTitle": "Acerca de",
-    "aboutText": "Apasionado por el desarrollo de software y la programación.",
+    "aboutText": "Estudiante curioso y motivado de ingeniería, con un gran interés en los sistemas aeroespaciales y las telecomunicaciones.",
     "expTitle": "Experiencia",
     "eduTitle": "Estudios",
-    "honTitle": "Matrículas de Honor",
+    "honTitle": "Excelentes y Matrículas de Honor",
     "skillsTitle": "Habilidades",
     "langTitle": "Idiomas",
     "personal": [
-      "📍 Viladecans, Barcelona",
-      "✉️ j.lopezcarbo4@gmail.com",
-      "📞 +34 635862864"
+      "📍 Castelldefels, Barcelona",
+      "✉️ avaleragarcia2003@gmail.com",
+      "📞 +34 634304701"
     ],
     "links": {
-      "github": "https://github.com/JairoLopezCarbo",
+      "github": "https://github.com/angelvaalera2",
       "githubText": "GitHub",
-      "linkedin": "https://www.linkedin.com/in/jairo-lópez-carbó-40a4a924b/",
+      "linkedin": "https://www.linkedin.com/in/ángel-valera-03b471267/",
       "linkedinText": "LinkedIn"
     },
     "exp": [
       {
-        "company": "Universidad Politécnica de Catalunya (UPC)",
-        "role": "Becario Proyecto SESAR",
-        "period": "sept. 2023 - Presente",
-        "details": "Contrato a tiempo parcial, trabajo en grupo en un simulador de tráfico aéreo en vías urbanas"
+        "company": "GoStudent",
+        "role": "Profesor",
+        "period": "mar. 2024 - Presente",
+        "details": "Profesor a tiempo parcial de asignaturas STEM"
       },
       {
-        "company": "TB Kids",
-        "role": "Profesor infantil Robótica",
-        "period": "mar. 2023 - jul. 2023",
-        "details": ""
+        "company": "Hockey Club Villena",
+        "role": "Entrenador",
+        "period": "ago. 2019 - mar. 2020",
+        "details": "Entrenador de hockey. Organización de entrenamientos y mejora del rendimiento técnico."
       },
       {
-        "company": "Kids & Us",
-        "role": "Profesor infantil Inglés",
-        "period": "sept. 2022 - jul. 2023",
-        "details": ""
-      },
-      {
-        "company": "FIRST LEGO LEAGUE, Equipo 1675",
+        "company": "FIRST LEGO LEAGUE",
         "role": "Equipo de programación",
-        "period": "2019 - 2020",
-        "details": ""
+        "period": "2018 - 2019",
+        "details": "Participación en competiciones de robótica y programación en equipo"
       }
     ],
     "edu": [
       {
         "institution": "Universidad Politécnica de Catalunya, campus de Castelldefels (UPC - EETAC)",
-        "degree": "Doble Grado - Ingeniería Sistemas Aeroespaciales & Ingeniería Telemática",
+        "degree": "Doble Grado - Ingeniería Sistemas Aeroespaciales & Ingeniería en Telecomunicaciones",
         "period": "sept. 2022 - Presente"
-      },
-      {
-        "institution": "SA-FA - Gavà",
-        "degree": "Bachillerato Tecnológico",
-        "period": "2020 - 2022"
-      },
-      {
-        "institution": "Programa de intercambio, Milwaukee (Estados Unidos)",
-        "degree": "",
-        "period": "2019 - 2020"
       }
     ],
-    "skills": ["Python", "C#", "C", "MySQL", "SolidWorks"],
-    "languages": ["Castellano - Nativo", "Inglés - C1 (Certificado)", "Catalán - Nativo"],
-    "honors": ["Expresión Gráfica", "Informática 2", "Procesamiento de Señal", "Infraestructura de Redes"]
+    "skills": ["Python", "C#", "SolidWorks"],
+    "languages": ["Castellano - Nativo", "Inglés - B2 (Certificado)"],
+    "honors": ["Empresa", "Química", "Sistemas Operativos"]
   },
-  "en": {
-    "name": "Jairo López Carbó",
-    "title": "Aerospace Systems & Telematics Engineering Student",
-    "aboutTitle": "About",
-    "aboutText": "Passionate about software development and programming.",
-    "expTitle": "Experience",
-    "eduTitle": "Education",
-    "honTitle": "Honors",
-    "skillsTitle": "Skills",
-    "langTitle": "Languages",
-    "personal": [
-      "📍 Viladecans, Barcelona",
-      "✉️ j.lopezcarbo4@gmail.com",
-      "📞 +34 635862864"
-    ],
-    "links": {
-      "github": "https://github.com/JairoLopezCarbo",
-      "githubText": "GitHub",
-      "linkedin": "https://www.linkedin.com/in/jairo-lópez-carbó-40a4a924b/",
-      "linkedinText": "LinkedIn"
+"en": {
+  "name": "Ángel Valera García",
+  "title": "Aerospace Systems & Telecommunications Engineering Student",
+  "aboutTitle": "About",
+  "aboutText": "Curious and motivated engineering student with a strong interest in aerospace and telecommunications systems.",
+  "expTitle": "Experience",
+  "eduTitle": "Education",
+  "honTitle": "Honors",
+  "skillsTitle": "Skills",
+  "langTitle": "Languages",
+  "personal": [
+    "📍 Castelldefels, Barcelona",
+    "✉️ avaleragarcia2003@gmail.com",
+    "📞 +34 634304701"
+  ],
+  "links": {
+    "github": "https://github.com/angelvaalera2",
+    "githubText": "GitHub",
+    "linkedin": "https://www.linkedin.com/in/ángel-valera-03b471267/",
+    "linkedinText": "LinkedIn"
+  },
+  "exp": [
+    {
+      "company": "GoStudent",
+      "role": "Tutor",
+      "period": "Mar 2024 - Present",
+      "details": "Part-time tutor of STEM subjects for high school and pre-university students."
     },
-    "exp": [
-      {
-        "company": "Universitat Politècnica de Catalunya (UPC)",
-        "role": "SESAR Project Intern",
-        "period": "Sept 2023 - Present",
-        "details": "Part-time contract, teamwork on an urban air traffic simulator."
-      },
-      {
-        "company": "TB Kids",
-        "role": "Children's Robotics Instructor",
-        "period": "Mar 2023 - Jul 2023",
-        "details": ""
-      },
-      {
-        "company": "Kids & Us",
-        "role": "Children's English Instructor",
-        "period": "Sept 2022 - Jul 2023",
-        "details": ""
-      },
-      {
-        "company": "FIRST LEGO LEAGUE, Team 1675",
-        "role": "Programming Team Member",
-        "period": "2019 - 2020",
-        "details": ""
-      }
-    ],
-    "edu": [
-      {
-        "institution": "Polytechnic University of Catalonia, Castelldefels Campus (UPC - EETAC)",
-        "degree": "Double Degree - Aerospace Systems Engineering & Telematics Engineering",
-        "period": "Sept 2022 - Present"
-      },
-      {
-        "institution": "SA-FA - Gavà",
-        "degree": "Technological Baccalaureate",
-        "period": "2020 - 2022"
-      },
-      {
-        "institution": "Exchange program, Milwaukee (USA)",
-        "degree": "",
-        "period": "2019 - 2020"
-      }
-    ],
-    "skills": ["Python", "C#", "C", "MySQL", "SolidWorks"],
-    "languages": ["Spanish - Native", "English - C1 (Certified)", "Catalan - Native"],
-    "honors": ["Graphic Expression", "Computer Science 2", "Signal Processing", "Network Infrastructure"]
-  }
+    {
+      "company": "Hockey Club Villena",
+      "role": "Coach",
+      "period": "Aug 2019 - Mar 2020",
+      "details": "Youth team coach. Organized training sessions and improved technical performance."
+    },
+    {
+      "company": "FIRST LEGO LEAGUE",
+      "role": "Programming Team Member",
+      "period": "2018 - 2019",
+      "details": "Participated in robotics and programming competitions as part of a team."
+    }
+  ],
+  "edu": [
+    {
+      "institution": "Polytechnic University of Catalonia, Castelldefels Campus (UPC - EETAC)",
+      "degree": "Double Degree - Aerospace Systems Engineering & Telecommunications Engineering",
+      "period": "Sept 2022 - Present"
+    }
+  ],
+  "skills": ["Python", "C#", "SolidWorks"],
+  "languages": ["Spanish - Native", "English - B2 (Certified)"],
+  "honors": ["Business", "Chemistry", "Operating Systems"]
 }
