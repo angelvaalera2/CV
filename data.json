@@ -51,55 +51,56 @@
     "languages": ["Castellano - Nativo", "Inglés - B2 (Certificado)"],
     "honors": ["Empresa", "Química", "Sistemas Operativos"]
   },
-"en": {
-  "name": "Ángel Valera García",
-  "title": "Aerospace Systems & Telecommunications Engineering Student",
-  "aboutTitle": "About",
-  "aboutText": "Curious and motivated engineering student with a strong interest in aerospace and telecommunications systems.",
-  "expTitle": "Experience",
-  "eduTitle": "Education",
-  "honTitle": "Honors",
-  "skillsTitle": "Skills",
-  "langTitle": "Languages",
-  "personal": [
-    "📍 Castelldefels, Barcelona",
-    "✉️ avaleragarcia2003@gmail.com",
-    "📞 +34 634304701"
-  ],
-  "links": {
-    "github": "https://github.com/angelvaalera2",
-    "githubText": "GitHub",
-    "linkedin": "https://www.linkedin.com/in/ángel-valera-03b471267/",
-    "linkedinText": "LinkedIn"
-  },
-  "exp": [
-    {
-      "company": "GoStudent",
-      "role": "Tutor",
-      "period": "Mar 2024 - Present",
-      "details": "Part-time tutor of STEM subjects for high school and pre-university students."
+  "en": {
+    "name": "Ángel Valera García",
+    "title": "Aerospace Systems & Telecommunications Engineering Student",
+    "aboutTitle": "About",
+    "aboutText": "Curious and motivated engineering student with a strong interest in aerospace and telecommunications systems.",
+    "expTitle": "Experience",
+    "eduTitle": "Education",
+    "honTitle": "Honors",
+    "skillsTitle": "Skills",
+    "langTitle": "Languages",
+    "personal": [
+      "📍 Castelldefels, Barcelona",
+      "✉️ avaleragarcia2003@gmail.com",
+      "📞 +34 634304701"
+    ],
+    "links": {
+      "github": "https://github.com/angelvaalera2",
+      "githubText": "GitHub",
+      "linkedin": "https://www.linkedin.com/in/ángel-valera-03b471267/",
+      "linkedinText": "LinkedIn"
     },
-    {
-      "company": "Hockey Club Villena",
-      "role": "Coach",
-      "period": "Aug 2019 - Mar 2020",
-      "details": "Youth team coach. Organized training sessions and improved technical performance."
-    },
-    {
-      "company": "FIRST LEGO LEAGUE",
-      "role": "Programming Team Member",
-      "period": "2018 - 2019",
-      "details": "Participated in robotics and programming competitions as part of a team."
-    }
-  ],
-  "edu": [
-    {
-      "institution": "Polytechnic University of Catalonia, Castelldefels Campus (UPC - EETAC)",
-      "degree": "Double Degree - Aerospace Systems Engineering & Telecommunications Engineering",
-      "period": "Sept 2022 - Present"
-    }
-  ],
-  "skills": ["Python", "C#", "SolidWorks"],
-  "languages": ["Spanish - Native", "English - B2 (Certified)"],
-  "honors": ["Business", "Chemistry", "Operating Systems"]
+    "exp": [
+      {
+        "company": "GoStudent",
+        "role": "Tutor",
+        "period": "Mar 2024 - Present",
+        "details": "Part-time tutor of STEM subjects for high school and pre-university students."
+      },
+      {
+        "company": "Hockey Club Villena",
+        "role": "Coach",
+        "period": "Aug 2019 - Mar 2020",
+        "details": "Youth team coach. Organized training sessions and improved technical performance."
+      },
+      {
+        "company": "FIRST LEGO LEAGUE",
+        "role": "Programming Team Member",
+        "period": "2018 - 2019",
+        "details": "Participated in robotics and programming competitions as part of a team."
+      }
+    ],
+    "edu": [
+      {
+        "institution": "Polytechnic University of Catalonia, Castelldefels Campus (UPC - EETAC)",
+        "degree": "Double Degree - Aerospace Systems Engineering & Telecommunications Engineering",
+        "period": "Sept 2022 - Present"
+      }
+    ],
+    "skills": ["Python", "C#", "SolidWorks"],
+    "languages": ["Spanish - Native", "English - B2 (Certified)"],
+    "honors": ["Business", "Chemistry", "Operating Systems"]
+  }
 }
